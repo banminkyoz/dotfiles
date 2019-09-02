@@ -12,6 +12,9 @@ sxhkd &
 # Set the background
 setbg &	
 
+# Set the light of screen
+light -S 50
+
 # To support Ibus for terminal
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
