@@ -4,29 +4,29 @@ separator_block_width=34
 markup=pango
 
 [music]
-label=
+label= 
 interval=once
 signal=11
 
 [disk]
-label= 
+label=  
 interval=60
 command=disk /
 
 [memory]
-label= 
+label=  
 interval=30
 
 [cpu]
-label=
+label= 
 interval=15
 
 [fans]
-label=
+label= 
 interval=15
 
 [backlight]
-label=
+label= 
 interval=once
 signal=21
 
@@ -42,11 +42,11 @@ interval=5
 interval=15
 
 [lang]
-label= 
+label=  
 interval=once
 signal=20
 
 [clock]
-label= 
+label=  
 interval=30
 

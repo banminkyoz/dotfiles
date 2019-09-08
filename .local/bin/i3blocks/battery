@@ -5,7 +5,7 @@ capacity=$(cat /sys/class/power_supply/"$1"/capacity) || exit
 status=$(cat /sys/class/power_supply/"$1"/status)
 
 if [ "$status" == "Full" ]; then
-  printf "%s%s" "  " "Full"
+  printf "%s%s\n" "  " "Full"
 else
-  printf "%s%s%s" "$(echo "$status" | sed -e "s/,//;s/Discharging//;s/Not Charging//;s/Charging//;s/Unknown//;s/Full/ /;s/ 0*/ /g;s/ :/ /g")" "$(echo " $capacity" | sed -e 's/$/%/')"
+  printf "%s%s%s\n" "$(echo "$status" | sed -e "s/,//;s/Discharging//;s/Not Charging//;s/Charging//;s/Unknown//;s/Full/ /;s/ 0*/ /g;s/ :/ /g")" "$(echo " $capacity" | sed -e 's/$/%/')"
 fi

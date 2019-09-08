@@ -14,4 +14,4 @@ else
   lang="EN"
 fi
 
-printf "%s" $lang
+printf "%s\n" $lang
